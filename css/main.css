@@ -130,9 +130,39 @@ h2 {
 .serv-list__left {
     margin-left: 37px;
 }
+.owl-carousel {
+    margin-top: 99px;
+}
 .owl-carousel .owl-theme .item {
     width: 825px !important;
-}
+    position: relative;
+}/* Тут мы указывали размер картинки и то, что этот элемент родитель для значка плэй owl-carousel__play*/
 .owl-theme .owl-dots, .owl-theme .owl-nav {
-    
+    text-align: left;
+}/* Указали, что стрелочки должны быть внизу*/
+.owl-theme .owl-nav [class*=owl-] {
+    margin: 0;
+}
+.owl-nav {
+    margin-top: 50px !important;
+}/* Опустили стрелочки вниз на 50 пикселей */
+.owl-carousel .owl-prev {
+    margin-right: 20px !important;
+}/* указали длину между ними */
+.owl-carousel__play {
+    display: block;
+    background: url(../img/play.svg);
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -32.5px;
+    margin-top: -32.5px;
+    cursor: pointer;
+}/*Определили все характеристики значка плэй*/
+.result {
+    padding-top: 219px;
+    width: 55%;
+    background: url(../img/img6.jpg);
 }
