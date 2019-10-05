@@ -11,6 +11,11 @@ button {
     background: transparent;
     border: none;
 }/* Определяется, как элемент будет отображаться в документе: блок определяет блочный элемент и позволяет перенести его с одной стороны в другую (c его помощью можем переносить элементы с одного конца границы в другой). Отображает фон: прозрачный. Обозначение границ: отсутствует */
+ul, li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}/* Убрали стандартные отступы и точки, превратили их в блочный элемент, который идет друг за другом */
 .vh-dependent {
     height: 35vh;
     display: flex;
@@ -115,3 +120,19 @@ h2 {
     color: #8f8f8f;
     margin-bottom: 40px; 
 }/* Указали, что буквы будут заглавные. Размер шрифта 14 пикселей. Размер между буквами .. */
+.serv-list{
+    color: #8d8d8d;
+    margin-top: 67px;
+}
+.serv-list__item {
+    margin-bottom: 20px;
+}
+.serv-list__left {
+    margin-left: 37px;
+}
+.owl-carousel .owl-theme .item {
+    width: 825px !important;
+}
+.owl-theme .owl-dots, .owl-theme .owl-nav {
+    
+}
