@@ -163,6 +163,105 @@ h2 {
 }/*Определили все характеристики значка плэй*/
 .result {
     padding-top: 219px;
-    width: 55%;
-    background: url(../img/img6.jpg);
 }
+.collage {
+    padding-top: 219px;
+    width: 55%;
+    height: 540px;
+    background: url(../img/img6.jpg) no-repeat left top / 80% 70%;
+    position: absolute;
+    left: 0;
+}/* Указали отступ сверху, ширину картинки, добавили фон, указали, чтобы не повторялась картинка и крайне лево-вверхнее положение и размер фона 80% на 100% от экрана. */
+.collage img {
+    display: block;
+    width: 350px;
+    height: 453px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    box-shadow: 30px 80px 130px rgba(0,0,0,0.25);
+}
+.easy {
+    margin-left: 65px;
+    margin-top: 40px;
+}
+.easy-text {
+    margin-bottom: 62px;
+}
+.easy-title {
+    margin-bottom: 30px;
+}
+.easy__point {
+    padding-left: 83px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #000;
+    font-weight: 500;
+    font-size: 14px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+
+}
+.easy__pointer-first {
+    background: url(../img/icon100.svg) no-repeat left center;
+}
+
+.easy__pointer-second {
+    background: url(../img/bag.svg) no-repeat left center;
+}
+.works {
+    padding-top: 283px;
+}
+.work-tabs {
+    margin-left: 60px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin-top: 70px;
+}
+.work-tabs__item a {
+    text-decoration: none;
+    color: #8d8d8d;
+}
+.work-tabs__item.active a {
+    color: #1434E1;
+}
+.works-wrap {
+    flex-wrap: wrap;
+    margin-top: 108px;
+}/* Флексы выстраиваются в несколько строк, их направление задаётся свойством flex-direction.*/
+.works-wrap__item {
+    margin-bottom: 30px;
+    position: relative;
+}
+.works-wrap__item img {
+    transition: all 1s ease;
+    display: block;
+}/* Специально обратились к img, чтобы сделать transition*/
+.works-wrap__item:hover img {
+    box-shadow: -30px 80px 200px rgba(0,0,0,0.25);
+    -moz-transform: scale(1.1) translate(0px, -20px);
+    -webkit-transform: scale(1.1) translate(0px, -20px);
+    -o-transform: scale(1.1) translate(0px, -20px);
+    -ms-transform: scale(1.1) translate(0px, -20px);
+    transform: scale(1.1) translate(0px, -20px);
+}
+.works-wrap__item:hover::after {
+    content: ' ';
+    display: block;
+    background: url(../img/play.svg);
+    width: 65px;
+    height: 65px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -32px;
+    margin-top: -32px;
+}
+.tabs__content {
+    display: none !important; /* по умолчанию прячем все блоки */
+  }
+.tabs__content.active {
+    display: flex !important; /* по умолчанию показываем нужный блок */
+  }
