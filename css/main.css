@@ -35,6 +35,9 @@ h1, h2, h3, h4, h5, h6 {
 h2 {
     font-size: 38px;
 }
+h3 {
+    font-size: 22px;
+}
 .btn {
     background: #4737ff;
     color: #fff;
@@ -261,7 +264,19 @@ h2 {
 }
 .tabs__content {
     display: none !important; /* по умолчанию прячем все блоки */
-  }
+}
 .tabs__content.active {
     display: flex !important; /* по умолчанию показываем нужный блок */
-  }
+}
+.testimonials{
+    padding-top: 248px;
+}
+.contributor {
+    margin-top: 121px;
+}
+.contributor__title {
+    margin-bottom: 20px;
+}
+.cont-photo {
+    display: block;
+}
