@@ -280,3 +280,45 @@ h3 {
 .cont-photo {
     display: block;
 }
+.contributor-carousel .owl-nav {
+    display: flex;
+    position: relative;
+}
+.contributor-carousel .owl-prev {
+    margin-right: 25px; 
+}
+.clients {
+    padding-top: 270px;
+}
+.clients-row {
+    margin-top: 127px;
+}
+.footer {
+    height: 240px;
+    background: #515151;
+    margin-top: 136px;
+}
+.footer-logo {
+    margin-top: 109px;
+    margin-bottom: 109px;
+}
+
+
+@media screen and (max-width: 992px) {
+    .works-carousel .item, .works-carousel .owl-item {
+        width: auto !important;
+    }
+
+}
+@media screen and (max-width: 1200px) {
+    .work-tabs {
+        margin-left: 0;
+    }
+    .works-wrap__item {
+        width: 30%;
+    }
+    .works-wrap__item img {
+        display: block;
+        width: 100%;
+    }
+}

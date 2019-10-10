@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700&display=swap" rel="stylesheet">
@@ -57,7 +58,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
-                    <img src="img/img2.jpg" alt="Poster" class="poster">
+                    <img src="img/img2.jpg" alt="Poster" class="poster img-fluid"><!-- FLUID при меньшем разрешении размер картинки сужается. -->
                 </div>
                 <div class="col-md-6 ml-auto d-flex align-items-center"><!-- Прописали CSS свойство в класс, получилось из-за бутстрап. -->
                     <div class="about">
@@ -170,7 +171,7 @@
                         </h2>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-12 col-xl-6">
                     <ul class="work-tabs d-flex justify-content-between tabs__caption"><!-- d-flex чтобы были все в одну строку. justify-content-between поможет разместить на равные отрезки все элементы -->
                         <li class="work-tabs__item active">
                             <a href="#">All</a>
@@ -238,7 +239,7 @@
     </section>
     <section class="testimonials">
             <div class="container">
-                <div class="contributor-carousel">
+                <div class="owl-carousel contributor-carousel">
                     <!-- Первый слайд-->
                     <div class="row">
                         <div class="col-md-6">
@@ -258,9 +259,10 @@
                             </div>
                         </div>
                         <div class="col-md-5 ml-auto">
-                            <img src="img/photo.jpg" alt="Photo Polina Kuzina" class="cont-photo img-responsive">
+                            <img src="img/photo.jpg" alt="Photo Polina Kuzina" class="cont-photo img-fluid">
                         </div>
                     </div>
+                    <!--Второй слайд-->
                     <div class="row">
                         <div class="col-md-6">
                             <div class="section-title">
@@ -285,6 +287,49 @@
                 </div>
             </div>
     </section>
+    <section class="clients">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="section-title">
+                        <h2 class="section-title__heading">
+                            Our Clients
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="clients-row d-flex justify-content-between">
+                        <a href="#" class="clients-row__item">
+                            <img src="img/xiaomi.svg" alt="XIAOMI">
+                        </a>
+                        <a href="#" class="clients-row__item">
+                            <img src="img/tinder.svg" alt="Tinder">
+                        </a>
+                        <a href="#" class="clients-row__item">
+                            <img src="img/apple.svg" alt="Apple">
+                        </a>
+                        <a href="#" class="clients-row__item">
+                            <img src="img/nike.svg" alt="XIAOMI">
+                        </a>
+                        <a href="#" class="clients-row__item">
+                            <img src="img/amd.svg" alt="XIAOMI">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col d-flex justify-content-center">
+                    <img src="img/logo-footer.svg" alt="Logo Footer" class="footer-logo">
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
 
